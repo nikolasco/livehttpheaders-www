@@ -19,3 +19,19 @@ function triggerURL(url) {
 <h5 class="page-header">Installation</h5>
 
 <p><a href="#" onclick="triggerURL('http://livehttpheaders.mozdev.org/livehttpheaders.xpi');">Install LiveHTTPHeaders now</a></p>
+
+<p><b>Note: this has only be tested on the following Mozilla version:
+<ul>
+<li>Mozilla 1.1 on Linux</li>
+<li>Mozilla 1.2 on Linux and Windows</li>
+</ul>
+Don't try it on a lower version of Mozilla!</B></P>
+
+<P>If you need to remove it, you will need to edit these three files and remove the lines containing 'livehttpheaders' if present:
+<ul>
+<li>chrome/installed-chrome.txt</li>
+<li>chrome/overlayinfo/communicator/content/overlays.rdf</li>
+<li>chrome/overlayinfo/navigator/content/overlays.rdf</li>
+</ul>
+</p>
+
