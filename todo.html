@@ -1,17 +1,14 @@
 <!-- MAIN CONTENT -->
 <p><h5>TODO:</H5></p>
 <ul>
+<li><b>Detect when server send the same headers multiples times</b><br>
+  Some headers like Set-Cookie can be sent more than one time.  Detect this and display them
+  correctly.
+</li>
 <li><b>Find a fast way to get POST Data when file upload are used</b><br>
   There is currently a bug (See bug #188328) that cause problem when there is a file upload in
   the post data.  If you want to see post data with file upload, you need to select 'slow' in
   the LiveHTTPHeaders window.
-</li>
-<li><b>Add Save button in live header dialog</b><br>
-  Clipboards seem to be limited in size (copy all button) at least on linux
-</li>
-<li><b>Detect proxy type (http, https and socks)</b><br>
-  If no proxy or socks proxies are used, the http request looks like this: <CODE>GET /url.html HTTP/1.0</CODE><br>
-  If an HTTP proxy is used, the http request looks like this: <CODE>GET http://www.site.com/url.htm HTTP/1.0</CODE>
 </li>
 <li><b>Add epuration if needed</b><br>
   The headers information is kept as long as the windows is open.
@@ -20,9 +17,9 @@
   If the same URL is loaded in two TABS in the same window, the information
   about the second URL will update the information about the first one
 </li>
-<li><b>Try to detect the version of HTTP used for request (HTTP/1.0 or HTTP/1.1)</b><br>
+<li><b>Try to detect the version of HTTP used for response (HTTP/1.0 or HTTP/1.1)</b><br>
   LiveHTTPHeaders show HTTP/1.x for HTTP version.  Try to find a way to get the version
-  used by Mozilla to make its HTTP request and show it instead of 1.x.
+  used by the remote server in the response and show it instead of 1.x.
 </li>
 <li><b>Add a way to scroll headers left to right</b><br>
   Some headers are very long.  Find a way to display them on screen.  
