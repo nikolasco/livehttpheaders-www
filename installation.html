@@ -25,16 +25,26 @@ function triggerURL(url) {
 <h5 class="page-header">Installation</h5>
 
 <!--<p><a href="#" onclick="triggerURL('http://livehttpheaders.mozdev.org/livehttpheaders-0.9.xpi');">Install version 0.9 of LiveHTTPHeaders now</a>-->
+<!--
+<p><a href="#" onclick="triggerURL('http://downloads.mozdev.org/livehttpheaders/livehttpheaders-0.10.xpi');">Install version 0.10 of LiveHTTPHeaders now</a> 
+or <A HREF='http://downloads.mozdev.org/livehttpheaders/livehttpheaders-0.10.xpi' title="Don't forget to press SHIFT to download!">(download it)</A>  
+&nbsp; &nbsp; <A HREF='#0.10'>(what's new)</A><BR>
+Note: you must install v0.10 GLOBALLY if you already have v0.8 or less installed!</p>
+-->
+
 <p><a href="#" onclick="triggerURL('http://downloads.mozdev.org/livehttpheaders/livehttpheaders-0.9.xpi');">Install version 0.9 of LiveHTTPHeaders now</a> 
 or <A HREF='http://downloads.mozdev.org/livehttpheaders/livehttpheaders-0.9.xpi' title="Don't forget to press SHIFT to download!">(download it)</A>  
 &nbsp; &nbsp; <A HREF='#0.9'>(what's new)</A><BR>
 Note: you must install v0.9 GLOBALLY if you already have v0.8 or less installed!</p>
+
 <p><a href="#" onclick="triggerURL('http://downloads.mozdev.org/livehttpheaders/livehttpheaders-0.8.xpi');">Install version 0.8 of LiveHTTPHeaders now</a> 
 or <A HREF='http://downloads.mozdev.org/livehttpheaders/livehttpheaders-0.8.xpi' title="Don't forget to press SHIFT to download!">(download it)</A> 
 &nbsp; &nbsp; <A HREF='#0.8'>(what's new)</A></p>
+
 <p><a href="#" onclick="triggerURL('http://downloads.mozdev.org/livehttpheaders/livehttpheaders-0.7.xpi');">Install version 0.7 of LiveHTTPHeaders now</a> 
 or <A HREF='http://downloads.mozdev.org/livehttpheaders/livehttpheaders-0.7.xpi' title="Don't forget to press SHIFT to download!">(download it)</A> 
 &nbsp; &nbsp; <A HREF='#0.7'>(what's new)</A></p>
+
 <p><a href="#" onclick="triggerURL('http://downloads.mozdev.org/livehttpheaders/livehttpheaders-0.6.xpi');">Install version 0.6 of LiveHTTPHeaders now</a> 
 or <A HREF='http://downloads.mozdev.org/livehttpheaders/livehttpheaders-0.6.xpi' title="Don't forget to press SHIFT to download!">(download it)</A> 
 &nbsp; &nbsp; <A HREF='#0.6'>(what's new)</A></p>
@@ -125,10 +135,23 @@ Also, you will need to remove the following files:
 
 <hr>
 
+<!--
+<A NAME='0.10'></A>
+<P><B>What is new in version 0.10</B>
+<A HREF='#install'>(install)</A>
+<ul>
+<li>Now support Firefox Preview Release (0.10) (This fixes bug #7239)
+<li>Bug #6665: Bad extension name in firefox should now be fixed.  The name was standarized to Live HTTP Headers instead of a mix of LiveHTTPHeaders and Live HTTP Headers.
+<li>Bug #7096: Page Info dtd file not in UTF-8 should now be fixed.  Thanks to Manuel.
+</ul>
+<hr>
+-->
+
 <A NAME='0.9'></A>
 <P><B>What is new in version 0.9</B>
 <A HREF='#install'>(install)</A>
 <ul>
+<li>Now compatible with Firefox Preview Release.  Thanks to Martijn Otto, Pete and others that talked about how to fix it.
 <li>There is now an option to add LiveHTTPHeaders to Mozilla's sidebar.  See the 'Add to sidebar' button in the config tab of the Live windows. (it is automatically available for Firefox, no need to click on the button).  (thanks to Grégoire Lejeune for his sample code)
 <li>You can install it in your own profile.  This close bug #5788.   There is two drawback however:
   <ul>
