@@ -1,2 +1,2 @@
 <link rel="stylesheet" href="default.css">
-<link rel="icon" href="favicon.ico">
+<link rel="icon" href="LiveHTTPHeaders.ico">
