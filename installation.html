@@ -59,11 +59,27 @@ Some tips if you have problems installing LiveHTTPHeaders
 <li>Third, if you can't install as root or Administrator, you need to install it with a user that have write permissions on the mozilla/chrome directory and subdirectory.  Starting with version 0.5 of livehttpheaders, you also need to have write permissions on the mozilla/components directory.</li>
 </ul>
 
+<P>If you want to install it from source, you will need to make the following directory mozilla/chrome/livehttpheaders and follow these steps
+<ul>
+<li>content will go under mozilla/chrome/livehttpheaders/content</li>
+<li>skin will go under mozilla/chrome/livehttpheaders/skin</li>
+<li>locale will go under mozilla/chrome/livehttpheaders/locale</li>
+<li>copy the file content/nsHeaderinfo to mozilla/components/</li>
+<li>add the content of the file 'installed-chrome.cat' to the file mozilla/chrome/installed-chrome.txt</li>
+<li>remove the file mozilla/components/compreg.dat</li>
+</ul>
+
 <P>If you need to remove it, you will need to edit these three files and remove the lines containing 'livehttpheaders' if present:
 <ul>
-<li>chrome/installed-chrome.txt</li>
-<li>chrome/overlayinfo/communicator/content/overlays.rdf</li>
-<li>chrome/overlayinfo/navigator/content/overlays.rdf</li>
+<li>mozilla/chrome/installed-chrome.txt</li>
+<li>mozilla/chrome/overlayinfo/communicator/content/overlays.rdf</li>
+<li>mozilla/chrome/overlayinfo/navigator/content/overlays.rdf</li>
+</ul>
+Also, you will need to remove the following files:
+<ul>
+<li>mozilla/chrome/livehttpheaders.xpi</li>
+<li>mozilla/components/nsHeaderInfo.js</li>
+<li>mozilla/components/compreg.dat</li>
 </ul>
 </p>
 
