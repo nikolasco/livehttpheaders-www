@@ -1,31 +1,41 @@
 <!-- MAIN CONTENT -->
 <p><h5>TODO:</H5></p>
 <ul>
-<li><b>Find a way to install LiveHTTPHeaders on a user basis.</b><br>
-  Because LiveHTTPHeaders use a components (mozilla/components), it can't be installed in 
-  a user chrome directory like Linky can.  Try to find a way to do it.
+<li><strike><b>Find a way to install LiveHTTPHeaders on a user basis.</b><br>
+  Because LiveHTTPHeaders use a components (mozilla/components), it can't be installed in a user chrome directory like Linky can.  Try to find a way to do it.</strike>
+  <BR>
+  <I>In the new version 0.9 it is now possible to install on a user basis (with some restriction on Mozilla and Firefox &lt;0.9).</I>
 </li>
 <li><b>Add a way to be able to put style to the LiveHTTPWindow.</b><br>
-  Add a way to be able to put style on request headers, response headers, post data, etc on 
-  the LiveHTTPWindow.
+  Add a way to be able to put style on request headers, response headers, post data, etc on the LiveHTTPWindow.
 </li>
 <li><b>Add a way to display a tree of request.</b><br>
-  This should be interesting to put a tree of the request and each sub-request (image, 
-  frames, etc).  This should help in seeing all related request and the corresponding
-  headers.
+  This should be interesting to put a tree of the request and each sub-request (image, frames, etc).  This should help in seeing all related request and the corresponding headers.
 </li>
 <li><b>Try to keep track of the time needed for each request.</b><br>
-  This may help in the desing of web application.  Try to display the time needed by each
-  request and groups of request and if possible, the size of them.
+  This may help in the desing of web application.  Try to display the time needed by each request and groups of request and if possible, the size of them.<BR>
+  <I>I'm working on it for the next version (0.10).</I>
 </li>
-<li><b>Try to detect the version of HTTP used for response (HTTP/1.0 or HTTP/1.1)</b><br>
-  LiveHTTPHeaders show HTTP/1.x for HTTP version.  Try to find a way to get the version
-  used by the remote server in the response and show it instead of 1.x.  This is no more a 
-  problem with newer builds (Mozilla 1.5 beta+)
+<li><strike><b>Try to detect the version of HTTP used for response (HTTP/1.0 or HTTP/1.1)</b><br>
+  LiveHTTPHeaders show HTTP/1.x for HTTP version.  Try to find a way to get the version used by the remote server in the response and show it instead of 1.x.</strike>
+  <BR>
+  <I>This is no more a problem with newer builds (Mozilla 1.5 beta+)</I>
 </li>
 <li><b>Add tabs to the LiveHTTPHeader window for replaying URL instead of new window.</b><br>
-  As the replay window needs the LiveHTTPHeader window, put the replay in new tabs instead
-  of new window.  This should cleanup the desing and the look.
+  As the replay window needs the LiveHTTPHeader window, put the replay in new tabs instead of new window.  This should cleanup the desing and the look.<BR>
+ <I>Bernardo A. de la Ossa Pérez is working on new features for replying for the next version (0.10)</I>
+</li>
+<li><b>Add syntax highlight.</b><br>
+  Add syntax highlight to the live and PageInfo's display.
+</li>
+<li><b>Get headers only.</b><br>
+  Add a way to get headers of a file/link without getting the file itself.  Maybe with the contextual menu on a link ?
+</li>
+<li><b>Customize headers.</b><br>
+  Add a way to remove/add/change headers on the fly (or automatically) through filters.
+</li>
+<li><b>Display the type of proxy in use (with username if available).</b><br>
+  It should be interesting to display the type of proxy: http, socks, etc. with each request.
 </li>
 <li><b>Cleanup of code for the LiveHTTPWindow.</b><br>
   This code is still proof of concept.  Clean it up and add comments.
