@@ -3,12 +3,12 @@
 
 function triggerURL(url) {
 
-        if (!InstallTrigger.updateEnabled())
+        if (!InstallTrigger.updateEnabled()) {
           return false; 
-
-        else
+        } else {
           InstallTrigger.startSoftwareUpdate(url); 
-
+          return true;
+        }
 }
 
 //-->
@@ -18,7 +18,9 @@ function triggerURL(url) {
 <!-- MAIN CONTENT -->
 <h5 class="page-header">Installation</h5>
 
-<p><a href="#" onclick="triggerURL('http://livehttpheaders.mozdev.org/livehttpheaders.xpi');">Install LiveHTTPHeaders now</a></p>
+<p><a href="#" onclick="triggerURL('http://livehttpheaders.mozdev.org/livehttpheaders.xpi');">Install the latest version of LiveHTTPHeaders now</a></p>
+<p><a href="#" onclick="triggerURL('http://livehttpheaders.mozdev.org/livehttpheaders-0.2.xpi');">Install version 0.2 of LiveHTTPHeaders now</a></p>
+<p><a href="#" onclick="triggerURL('http://livehttpheaders.mozdev.org/livehttpheaders-0.1.xpi');">Install version 0.1 of LiveHTTPHeaders now</a></p>
 
 
 <p><!--<?php downloads('livehttpheaders.xpi', 'downloads'); ?>--></p>
@@ -37,4 +39,15 @@ Don't try it on a lower version of Mozilla!</B></P>
 <li>chrome/overlayinfo/navigator/content/overlays.rdf</li>
 </ul>
 </p>
+
+<P>What is new in version 0.2
+<ul>
+<li>POST Content and headers is now shown</li>
+<li>Error in French locale corrected (need to use UTF-8 instead of HTML encoding) (thanks to Paul Lacourse)</li>
+</ul>
+
+<P>What is new in version 0.1
+<ul>
+<li>This is the first version...</li>
+</ul>
 
