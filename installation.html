@@ -21,6 +21,8 @@ function triggerURL(url) {
 <A NAME='install'></A>
 <h5 class="page-header">Installation</h5>
 
+<p><a href="#" onclick="triggerURL('http://downloads.mozdev.org/livehttpheaders/livehttpheaders.xpi');">Install version 0.6 of LiveHTTPHeaders now</a>
+ &nbsp; &nbsp; <A HREF='#0.6'>(what's new)</A></p>
 <p><a href="#" onclick="triggerURL('http://downloads.mozdev.org/livehttpheaders/livehttpheaders.xpi');">Install version 0.5 of LiveHTTPHeaders now</a>
  &nbsp; &nbsp; <A HREF='#0.5'>(what's new)</A></p>
 <p><a href="#" onclick="triggerURL('http://downloads.mozdev.org/livehttpheaders/livehttpheaders-0.4.xpi');">Install version 0.4 of LiveHTTPHeaders now</a>
@@ -47,6 +49,7 @@ function triggerURL(url) {
 <ul>
 <li>Netscape 7.02</li>
 <li>Mozilla 1.4b on Mac OS X</li>
+<li>Mozilla 1.3 on Windows</li>
 </ul>
 Don't try it on a lower version of Mozilla!</B></P>
 <br>
@@ -60,7 +63,8 @@ Some tips if you have problems installing LiveHTTPHeaders
 <li>First, you need to check the 'enable software installation' setting under advanced preferences-Software installation.</li>
 <li>Second, on unix like systems (GNU-Linux, Unix, Mac OS-X, BSD, etc), install it as root.  On windows system, install it as Administrator.</li>
 <li>Third, if you can't install as root or Administrator, you need to install it with a user that have write permissions on the mozilla/chrome directory and subdirectory.  Starting with version 0.5 of livehttpheaders, you also need to have write permissions on the mozilla/components directory.</li>
-<li>Forth, you can try to download it from <a href='http://downloads.mozdev.org/livehttpheaders/'>http://downloads.mozdev.org/livehttpheaders/</a> (don't forget to press shift while clicking on the livehttpheaders.xpi file) and try to install it after by opening it with Mozilla (File menu -> Open File)</li>
+<li>Forth, if this isn't possible, you can install your own copy of mozilla in a separate directory from the system one (in your home directory for exemple).  You should have all the needed permissions to install LiveHTTPHeaders.  (Write permission to mozilla/chrome and to mozilla/components).</li>
+<li>Fifth, you can try to download it from <a href='http://downloads.mozdev.org/livehttpheaders/'>http://downloads.mozdev.org/livehttpheaders/</a> (don't forget to press shift while clicking on the livehttpheaders.xpi file) and try to install it after by opening it with Mozilla (File menu -> Open File)</li>
 </ul>
 
 <hr width=100>
@@ -88,6 +92,18 @@ Also, you will need to remove the following files:
 <li>mozilla/chrome/livehttpheaders.xpi</li>
 <li>mozilla/components/nsHeaderInfo.js</li>
 <li>mozilla/components/compreg.dat</li>
+</ul>
+</p>
+
+<hr>
+
+<A NAME='0.6'></A>
+<P><B>What is new in version 0.6</B>
+<A HREF='#install'>(install)</A>
+<ul>
+<li>Horizontal scrolling added to the LiveHttpHeaders window and to the PageInfo Headers tab. (bug 3784, can't view very long cookies)
+<li>New about tab added to the LiveHTTPHeaders window.  (bug 3879, provide an about button)
+<li>The bug 3781 (Mozilla/Phoenix crash when both LiveHTTPHeaders and Tabbrowser are installed) is now gone.  The side effect is that the 'LiveHTTPHeaders' will now be at the bottom of the Tools menu.
 </ul>
 </p>
 
