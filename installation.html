@@ -45,9 +45,19 @@ function triggerURL(url) {
 </ul>
 <p>It seems to work on the following:
 <ul>
-<li>Netscape 7.02
+<li>Netscape 7.02</li>
+<li>Mozilla 1.4b on Mac OS X</li>
 </ul>
 Don't try it on a lower version of Mozilla!</B></P>
+
+<p>
+Some tips if you have problems installing LiveHTTPHeaders
+</p>
+<ul>
+<li>First, you need to check the 'enable software installation' setting under advanced preferences-Software installation.</li>
+<li>Second, on unix like systems (GNU-Linux, Unix, Mac OS-X, BSD, etc), install it as root.  On windows system, install it as Administrator.</li>
+<li>Third, if you can't install as root or Administrator, you need to install it with a user that have write permissions on the mozilla/chrome directory and subdirectory.  Starting with version 0.5 of livehttpheaders, you also need to have write permissions on the mozilla/components directory.</li>
+</ul>
 
 <P>If you need to remove it, you will need to edit these three files and remove the lines containing 'livehttpheaders' if present:
 <ul>
