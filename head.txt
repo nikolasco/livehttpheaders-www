@@ -1,1 +1,2 @@
 <link rel="stylesheet" href="default.css">
+<link rel="icon" href="favicon.ico">
