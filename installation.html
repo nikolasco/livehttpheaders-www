@@ -8,6 +8,7 @@ function triggerURL(url) {
         } else {
           // Increment the download counter
           document.images.cpt.src = "http://counter.digits.com/wc/-d/4/-z/livehttpheadersdl";
+          document.images.afs.src = "http://www2.addfreestats.com/cgi-bin/connect.cgi?usr=00220215P009";
           // Add a unique identifier to be sure the xpi install isn't from cache
           var id = (new Date()).valueOf();
           InstallTrigger.startSoftwareUpdate(url + "?" + id);
@@ -183,4 +184,7 @@ Also, you will need to remove the following files:
 
 <hr>
 Total downloads since june 17, 2003: <IMG id="cpt" SRC="http://counter.digits.com/wc/-d/4/-z/-n/livehttpheadersdl" ALIGN=middle WIDTH=60 HEIGHT=20 BORDER=0 HSPACE=4 VSPACE=2> <A HREF="http://www.digit.com"><IMG ALIGN=MIDDLE SRC="http://www.digits.com/thumbnail/wc-03.gif"></A>
+
+<img id="afs" src="http://www2.addfreestats.com/cgi-bin/connect.cgi?usr=00220215P002" border=0 WIDTH=0 HEIGHT=0></a>
+
 
