@@ -6,7 +6,9 @@ function triggerURL(url) {
         if (!InstallTrigger.updateEnabled()) {
           return false; 
         } else {
-          InstallTrigger.startSoftwareUpdate(url); 
+          // Add a unique identifier to be sure the xpi install isn't from cache
+          var id = (new Date()).valueOf();
+          InstallTrigger.startSoftwareUpdate(url + "?" + id); 
           return true;
         }
 }
