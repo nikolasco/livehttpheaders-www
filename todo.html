@@ -1,29 +1,34 @@
 <!-- MAIN CONTENT -->
 <p><h5>TODO:</H5></p>
 <ul>
-<li><b>Detect when server send the same headers multiples times</b><br>
-  Some headers like Set-Cookie can be sent more than one time.  Detect this and display them
-  correctly.
+<li><b>Add a way to be able to put style to the LiveHTTPWindow.</b><br>
+  Add a way to be able to put style on request headers, response headers, post data, etc on 
+  the LiveHTTPWindow.
 </li>
-<li><b>Find a fast way to get POST Data when file upload are used</b><br>
-  There is currently a bug (See bug #188328) that cause problem when there is a file upload in
-  the post data.  If you want to see post data with file upload, you need to select 'slow' in
-  the LiveHTTPHeaders window.
+<li><b>Add a way to display a tree of request.</b><br>
+  This should be interesting to put a tree of the request and each sub-request (image, 
+  frames, etc).  This should help in seeing all related request and the corresponding
+  headers.
 </li>
-<li><b>Add epuration if needed</b><br>
-  The headers information is kept as long as the windows is open.
-</li>
-<li><b>Try to detect same url in two tabs</b><br>
-  If the same URL is loaded in two TABS in the same window, the information
-  about the second URL will update the information about the first one
+<li><b>Try to keep track of the time needed for each request.</b><br>
+  This may help in the desing of web application.  Try to display the time needed by each
+  request and groups of request and if possible, the size of them.
 </li>
 <li><b>Try to detect the version of HTTP used for response (HTTP/1.0 or HTTP/1.1)</b><br>
   LiveHTTPHeaders show HTTP/1.x for HTTP version.  Try to find a way to get the version
-  used by the remote server in the response and show it instead of 1.x.
+  used by the remote server in the response and show it instead of 1.x.  This is sometime 
+  available in the cache but not always.  Try to get it there.
 </li>
 <li><b>Add a way to scroll headers left to right</b><br>
   Some headers are very long.  Find a way to display them on screen.  
   (Limitation of tree object.  They have no horizontal scroll bar)
+</li>
+<li><b>Add tabs to the LiveHTTPHeader window for replaying URL instead of new window.</b><br>
+  As the replay window needs the LiveHTTPHeader window, put the replay in new tabs instead
+  of new window.  This should cleanup the desing and the look.
+</li>
+<li><b>Cleanup of code for the LiveHTTPWindow.</b><br>
+  This code is still proof of concept.  Clean it up and add comments.
 </li>
 </ul>
 
