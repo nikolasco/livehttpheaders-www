@@ -1,0 +1,25 @@
+<!-- MAIN CONTENT -->
+<p><h5>TODO:</H5></p>
+<ul>
+<li><b>Add a Content-Length and Content-Type for POST request</b><br>
+  Theses two headers are sent to the server but are not available throw the
+  mozilla API...
+</li>
+<li><b>Add Save button in live header dialog</b><br>
+  Clipboards seem to be limited in size (copy all button) at least on linux
+</li>
+<li><b>Detect proxy type (http, https and socks)</b><br>
+  If no proxy or socks proxies are used, the http request looks like this: <CODE>GET /url.html HTTP/1.0</CODE><br>
+  If an HTTP proxy is used, the http request looks like this: <CODE>GET http://www.site.com/url.htm HTTP/1.0</CODE>
+</li>
+<li><b>Add epuration if needed</b><br>
+  The headers information is kept as long as the windows is open.
+</li>
+<li><b>Try to detect same url in two tabs</b><br>
+  If the same URL is loaded in two TABS in the same window, the information
+  about the second URL will update the information about the first one
+</li>
+</ul>
+
+<p><b>Suggestions:</b></p>
+<?php require(ANNOTATE); ?>
