@@ -24,10 +24,12 @@ function triggerURL(url) {
 <A NAME='install'></A>
 <h5 class="page-header">Installation</h5>
 
-<!--p><a href="#" onclick="triggerURL('http://livehttpheaders.mozdev.org/livehttpheaders.xpi');">Install version 0.6 of LiveHTTPHeaders now</a-->
-<p><a href="#" onclick="triggerURL('http://downloads.mozdev.org/livehttpheaders/livehttpheaders.xpi');">Install version 0.6 of LiveHTTPHeaders now</a>
+<!--p><a href="#" onclick="triggerURL('http://livehttpheaders.mozdev.org/livehttpheaders.xpi');">Install version 0.7 of LiveHTTPHeaders now</a-->
+<p><a href="#" onclick="triggerURL('http://downloads.mozdev.org/livehttpheaders/livehttpheaders.xpi');">Install version 0.7 of LiveHTTPHeaders now</a>
+ &nbsp; &nbsp; <A HREF='#0.7'>(what's new)</A></p>
+<p><a href="#" onclick="triggerURL('http://downloads.mozdev.org/livehttpheaders/livehttpheaders-0.6.xpi');">Install version 0.6 of LiveHTTPHeaders now</a>
  &nbsp; &nbsp; <A HREF='#0.6'>(what's new)</A></p>
-<p><a href="#" onclick="triggerURL('http://downloads.mozdev.org/livehttpheaders/livehttpheaders.xpi');">Install version 0.5 of LiveHTTPHeaders now</a>
+<p><a href="#" onclick="triggerURL('http://downloads.mozdev.org/livehttpheaders/livehttpheaders-0.5.xpi');">Install version 0.5 of LiveHTTPHeaders now</a>
  &nbsp; &nbsp; <A HREF='#0.5'>(what's new)</A></p>
 <p><a href="#" onclick="triggerURL('http://downloads.mozdev.org/livehttpheaders/livehttpheaders-0.4.xpi');">Install version 0.4 of LiveHTTPHeaders now</a>
  &nbsp; &nbsp; <A HREF='#0.4'>(what's new)</A></p>
@@ -48,13 +50,18 @@ function triggerURL(url) {
 <li>Mozilla 1.1 on Linux</li>
 <li>Mozilla 1.2 on Linux and Windows</li>
 <li>Mozilla 1.3a, 1.3b, 1.3 release on Linux</li>
-<li>Phoenix 0.5 on Linux</li>
+<li>Mozilla 1.4 release on Linux</li>
+<li>Mozilla 1.5a, 1.5b release on Linux</li>
+<li>Phoenix 0.5, 0.6, 0.61 on Linux</li>
 </ul>
 <p>It seems to work on the following:
 <ul>
 <li>Netscape 7.02</li>
 <li>Mozilla 1.4b on Mac OS X</li>
 <li>Mozilla 1.3 on Windows</li>
+<li>Mozilla 1.4 on Windows</li>
+<li>Mozilla 1.5a, 1.5b on Windows</li>
+<li>Phoenix 0.5, 0.6, 0.61 on Windows</li>
 </ul>
 Don't try it on a lower version of Mozilla!</B></P>
 <br>
@@ -103,6 +110,25 @@ Also, you will need to remove the following files:
 
 <hr>
 
+<A NAME='0.7'></A>
+<P><B>What is new in version 0.7</B>
+<A HREF='#install'>(install)</A>
+<ul>
+<li>A new style sheet is now available (disabled by default).  Thans to Mathieu Hautot.  Try it and send comments.  You can enable it in the configuration tab.  <BR>It seems that there is some case where the style use 100% CPU.  If you can point out what is wrong, tell me!
+<li>LiveHTTPHeaders now have a new logo and icons.  Thanks to Mathieu Hautot.
+<li>It is now possible to open LiveHTTPHeaders in tab.  You can change this behavior in the config tab of the live window (Tools -> Web Development -> LiveHTTPHeaders).
+<li>LiveHTTPHeaders now install itself in a directory under chrome (Mozilla/Chrome/livehttpheaders) instead of a jar file.  This should help people that want to personalize it (style) or look at it.
+<li>LiveHTTPHeaders is now able to display the correct request and response version with build newer than Mozilla 1.5 beta.  See the bug #201625 for more information.  Thanks to Daniel Brooks for this help on this.
+<li>The bug #4279 is now corrected.  This was due to a bad interpretation of a parameter to the treeBoxObject.  Thanks to Macarie Neculai for a patch.
+<li>The bug #4405 is now corrected.  LiveHTTPHeaders will now close all POST data when they are no more needed.  Thanks to Ere Maijala for pointing this out.
+<li>The bug #4549 is now corrected.  This bug affects all nightly build after September 15, 2003.  This is due to the removal of the nsIHttpNotify and nsINetModuleMgr interfaces in these new builds.  Thanks to Mandeep Singh for a patch.
+<li>The bug #4664 is now corrected.  Thanks to Scott Heavner for pointing this out.
+<li>Buttons on the live window are now activated/disabled on context.
+<li>LiveHTTPHeaders will now detect if its component is registered correctly and will display some help on how to force the registration by Mozilla/Firebird. (Bug #4667)
+</ul>
+</p>
+
+<hr>
 <A NAME='0.6'></A>
 <P><B>What is new in version 0.6</B>
 <A HREF='#install'>(install)</A>
