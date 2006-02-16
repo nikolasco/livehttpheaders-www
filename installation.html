@@ -24,6 +24,11 @@ function triggerURL(url) {
 <A NAME='install'></A>
 <h5 class="page-header">Installation</h5>
 
+<p><a href="#" onclick="triggerURL('http://downloads.mozdev.org/livehttpheaders/livehttpheaders-0.12.xpi');">Install version 0.12 of LiveHTTPHeaders now</a> 
+or <A HREF='http://downloads.mozdev.org/livehttpheaders/livehttpheaders-0.12.xpi' title="Don't forget to press SHIFT to download!">(download it)</A>  
+&nbsp; &nbsp; <A HREF='#0.12'>(what's new)</A><BR>
+Note: you must install v0.12 GLOBALLY if you already have v0.8 or less installed!</p>
+
 <p><a href="#" onclick="triggerURL('http://downloads.mozdev.org/livehttpheaders/livehttpheaders-0.11.xpi');">Install version 0.11 of LiveHTTPHeaders now</a> 
 or <A HREF='http://downloads.mozdev.org/livehttpheaders/livehttpheaders-0.11.xpi' title="Don't forget to press SHIFT to download!">(download it)</A>  
 &nbsp; &nbsp; <A HREF='#0.11'>(what's new)</A><BR>
@@ -138,6 +143,63 @@ Also, you will need to remove the following files:
 </p>
 
 <hr>
+
+<A NAME='0.12'></A>
+<P><B>What is new in version 0.12</B>
+<A HREF='#install'>(install)</A>
+<ul>
+<li>New Czech localization (thanks to Michal Kec and Pavel Franc)
+<li>Bug #12890 fixed: Extension logo missing for Firefox (thanks to Christopher Cook)
+<li>Bug #12745: LiveWindow should be closable via keyboard (thanks to Wladimir Palant)
+<li>Bug #11390 (#11463, #11989, #12038, #12458):Headers tab in Page Info does not work (thanks to Nikolas Coukouma, Nils Maier, Wladimir Palant)
+<li>Bug #12304 (#8997, #11184): Error: Components is not defined (thanks to Wladimir Palant)
+<li>Bug #12034: When a zero byte file is uploaded,liveheaders fails to capture the headers
+<li>Bug #11502: Incompatible with Firefox 1.5 Beta 2
+<li>Bug #11219: Problems with Tab Mix Plus 2.4.x
+<li>Bug #9467: request: auto-set content length on POST var change
+<li>Bug #9086: Colour problems. (thanks to Wladimir Palant)
+<li>Bug #8998: Live HTTP Headers does not respect tabbed browsing setting (thanks to Joshua Hewitt and Mook)
+<li>Bug #6401: Replay does not work with POST (data) (thanks to Wladimir Palant)
+<!-- These bugs are on the TODO list
+<li>Bug #12880 (#9512): Open LiveHTTPHeaders in a new tab" doesn't work on Firefox 1.5
+<li>Bug #12717: livehttpheaders 0.11 with Firefox 1.5 hangs when opening multiple tabs
+<li>Bug #12081: Authorization: Basic Header Ignored/Overwritten in Replay
+<li>Bug #12050: Crash when reloading POST query on SSL/HTTPS page [@ ssl3_SendRecord ]
+<li>Bug #11807: Shortcut for Sidebar (Alt+L) not working under localized FF
+<li>Bug #10364: Replay does not work with liveHttpHeaders running in TAB
+<li>Bug #9512: "Open LiveHTTPHeaders in a new tab" doesn't work on Mac OS X 10.3
+<li>Bug #9469: Firefox crashes after file upload when session saver and live headers are installed
+<li>Bug #8421: Live HTTP Headers: Settings Not Retained (in "Headers" and "Generator" Tabs) / JavaScript Console Errors
+<li>Bug #7247: LiveHTTPHeaders doesn't always capture requests
+<li>Bug #7076: not saving settings
+<li>Bug #6849: pageinfo displays pics-label meta tag as header
+<li>Bug #6665: Extension name
+<li>Bug #6434: Horizontal scrolling not working with style sheet enabled.
+<li>Bug #6410: No Unicode support
+<li>Bug #6293: Allow filtering on non-URL headers.
+<li>Bug #5787: CPU 99% used and memory leak opening options and Live headers simultaneously
+<li>Bug #5180: option to include/exclude host names
+<li>Bug #5144: Show request time info (timestamps)
+<li>Bug #4383: show http compression statistics
+-->
+<!-- These bugs are now longer valid or need to be fixed in the C/C++ code
+<li>Bug #12819: Profile installation in Mozilla Suite always fails
+<li>Bug #12217: Tools Live HTTP Headers does not display anything
+<li>Bug #8002: content-disposition shown lowercase though server sent TitleCase.
+<li>Bug #7828: Live HTTP Headers: JavaScript Console Error (From "Page Info", When the Active Tab is "General" or "Forms")
+<li>Bug #7096: es-ES locale PageInfo.dtd is not UTF-8
+<li>Bug #6664: livehttpheaders doesn't work correctly on 0.9.1 Firefox
+<li>Bug #6221: Headers with no values are not shown in the LiveWindow
+<li>Bug #5716: Sidebar panel for LiveWindow
+<li>Bug #5714: Fails to register on Mozilla 1.4
+<li>Bug #5630: mozilla 1.53, fails to install nsheaderinfo.js.
+<li>Bug #3583: Bugzilla search results/redirects die after reeated use
+<li>Bug #3597: No headers displayed when page loaded from cache
+<li>Bug #3713: Headers tab never shows http headers
+<li>Bug #3879: show livehttp version number on window or provide an about button
+<li>Bug #4631: Duplicate HTTP headers not showing up
+-->
+</ul>
 
 <A NAME='0.11'></A>
 <P><B>What is new in version 0.11</B>
