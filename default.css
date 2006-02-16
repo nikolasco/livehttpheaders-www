@@ -51,7 +51,7 @@
 }
 
 .infoTab .infoHeader{
- background: #ff9900 no-repeat url("http://www.mozdev.org/sharedimages/infotab_top.png");
+ background: no-repeat url("http://www.mozdev.org/sharedimages/infotab_top.png");
  color: white;
  text-align: center;
  font-family: Helvetica, Arial,san-serif;
