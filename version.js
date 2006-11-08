@@ -1,4 +1,4 @@
-var currentver = "0.12";
+var currentver = "0.13";
 if (location.search) {
 	var re = /ver=(.*)$/;
 	re.test(location.search);
