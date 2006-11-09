@@ -1,5 +1,5 @@
 <RDF:Description about="urn:mozilla:extension:{8f8fe09b-0bd3-4470-bc1b-8cad42b8203a}">
-  <em:version>0.13</em:version>
-  <em:updateLink>http://downloads.mozdev.org/livehttpheaders/livehttpheaders-0.13.xpi</em:updateLink>
+  <em:version>0.13.1</em:version>
+  <em:updateLink>http://downloads.mozdev.org/livehttpheaders/livehttpheaders-0.13.1.xpi</em:updateLink>
 </RDF:Description>
 
